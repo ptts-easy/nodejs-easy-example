@@ -46,11 +46,30 @@ const {
 
 const {sleep} = require("./thread-mng");
 
+const process = require('process');
+
 async function nodejs_all_test() {
 
   console.log("======= start all-test =======");
 
   console.log("Hello World!");
+
+
+
+
+console.clear();
+console.debug("console.debug");
+console.log("console.log");
+console.info("console.info");
+console.warn("console.warn");
+console.error("console.error");
+
+process.stdout.write("aaa");
+process.stderr.write("bbb");
+
+
+
+
 /*
   console.log("======= start global-test =======");
 
@@ -67,11 +86,13 @@ async function nodejs_all_test() {
 //  await uploadFileServer(8080);
 */
 
+/*
   console.log("======= start file-test =======");
 
   console.log("begin...");
   await listDir("./");
   console.log("end...");
+*/
 
 /*
   await readFile("demofile1.html");
