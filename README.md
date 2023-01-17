@@ -8,9 +8,8 @@
     6.HTTP : XMLHttp, fetch, ajax, axios
     7.websocket : socket.io
 
-
 # run & test
     -run    
         cmd>./run.bat
     -test
-        http://localhost:18080/template
+        http://localhost:18080/
