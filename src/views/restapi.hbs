@@ -1,0 +1,17 @@
+<section class="bg-light" style="height: 800px;">
+    <div class="container">
+	  <div>Fetch</div>
+	  <div>
+	    <button class="btn btn-success" onClick="fetch_api_click('/rest/retriever', 'GET')">get:retrieve</button>
+	    <button class="btn btn-primary" onClick="fetch_api_click('/rest/creater', 'POST')">post:create</button>
+	    <button class="btn btn-info" onClick="fetch_api_click('/rest/updater', 'PUT')">put:update</button>
+	    <button class="btn btn-danger" onClick="fetch_api_click('/rest/deleter', 'DELETE')">delete:delete</button>
+	    <button class="btn btn-warning" onClick="fetch_api_click('/rest/patcher', 'PATCH')">patch</button>
+	    <button class="btn btn-warning" onClick="fetch_api_click('/rest/options', 'OPTIONS')">options</button>
+	  </div>
+	  <div>RESTApi Response:</div>
+	  <div>
+		<span id="api_resp"></span>
+	  </div>
+    </div>
+</section>

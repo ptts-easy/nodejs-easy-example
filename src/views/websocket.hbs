@@ -1,0 +1,45 @@
+<section class="container bg-light" style="height: 800px;">
+    <div class="container">
+
+        <h1>Chating Example</h1>
+
+        <button type="button" class="btn btn-primary" id="btn_connect">Connect ...</button> 
+
+        <div class="row my-1">
+            <div class="col">
+                Name : <input id="user_name" type="text" name="name" value="User001" placeholder="Enter your name!">
+                <button type="button" class="btn btn-success" onclick="changeUsername()">Change</button> 
+            </div>
+        </div>
+        <div class="row my-1">
+            <div class="col">
+                Room : <input id="room_name" type="text" name="room" value="Room001" placeholder="Enter your room!">
+                <button type="button" class="btn btn-success" onclick="joinRoom()">Join</button>
+            </div>
+        </div>
+        <div class="row my-1">
+            <div class="col-4">
+                Users : 
+                <ul id="user_list" class="list-group list-group-flush border border-5 rounded-3">
+                </ul>
+            </div>
+            <div class="col">
+                <div class="row">
+                    <div class="col">
+                        Send : <input id="send_msg" class="border border-5 rounded-3" type="text" name="send_msg" value="" placeholder="Enter your message!">
+                        <button type="button" class="btn btn-success" onclick="sendMessage()">Send Message</button>
+                        <button type="button" class="btn btn-danger" onclick="clearMessage()">Clear Message</button>
+
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        Recv : 
+                        <div id="recv_msg" class="border border-5 rounded-3 overflow-auto" style="height: 300px;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
