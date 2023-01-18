@@ -18,11 +18,11 @@ This is a nodejs web application to learn easily.
 
 <img src="/images/001.png"/>
 
-- gin web template.
+- express hbs template.
 
 <img src="/images/002.png"/>
 
-- gin routing.
+- express routing.
 
 <img src="/images/003.png"/>
 
@@ -42,7 +42,7 @@ This is a nodejs web application to learn easily.
 
 <img src="/images/007.png"/>
 
-- websocket.
+- socket.io.
 
 <img src="/images/008.png"/>
 
