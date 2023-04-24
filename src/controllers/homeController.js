@@ -4,8 +4,14 @@ const globals = require("../globals/globals.js");
 function IndexGetHandler() {
 	return (req, res, next) => {
 
-		res.redirect('/hello');
+		res.redirect('/template');
 	};
+}
+
+// "/hello"
+function HelloGetHandler(req, res, next) {
+
+    res.send("<p>Hello World!</p> <br> <a href='/'>home</a>");
 }
 
 // "/template"
@@ -42,7 +48,7 @@ function RouteDefaultGetHandler() {
 	};
 }
 
-function RouteGetHandler(req, res, next) {
+function RouteGetHandler() {
 	return (req, res, next) => {
   
 		const name = req.params.name;
@@ -63,4 +69,4 @@ function RouteGetHandler(req, res, next) {
 	};
 }
 
-module.exports = { IndexGetHandler, TemplateGetHandler, RouteDefaultGetHandler, RouteGetHandler };
+module.exports = { IndexGetHandler, HelloGetHandler, TemplateGetHandler, RouteDefaultGetHandler, RouteGetHandler };

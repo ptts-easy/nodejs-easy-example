@@ -1,21 +1,18 @@
-const { LoginGetHandler, LoginPostHandler, LogoutGetHandler } = require("./authController.js");
-const { IndexGetHandler, TemplateGetHandler, RouteDefaultGetHandler, RouteGetHandler } = require("./homeController.js");
-const { DashboardGetHandler } = require("./dashboardController.js");
+const { IndexGetHandler, HelloGetHandler, TemplateGetHandler, RouteDefaultGetHandler, RouteGetHandler } = require("./homeController.js");
 const { FileuploadGetHandler } = require("./fileuploadController.js");
 const { HTTPHandler, HTTPInfoHandler } = require("./httpController.js");
 const { RestApiGetHandler, RestApiMsgHandler } = require("./restapiController.js");
+const { LoginGetHandler, LoginPostHandler, LogoutGetHandler } = require("./authController.js");
+const { DashboardGetHandler } = require("./dashboardController.js");
 const { WebsocketGetHandler } = require("./websocketControlller.js");
+const { NLPGetHandler } = require("./nlpController.js");
 
 module.exports = { 
-    LoginGetHandler, 
-    LoginPostHandler, 
-    LogoutGetHandler,
-
     IndexGetHandler, 
+    HelloGetHandler, 
     TemplateGetHandler, 
     RouteDefaultGetHandler, 
     RouteGetHandler, 
-    DashboardGetHandler, 
 
     FileuploadGetHandler, 
 
@@ -25,5 +22,13 @@ module.exports = {
     RestApiGetHandler, 
     RestApiMsgHandler,
 
-    WebsocketGetHandler
+    LoginGetHandler, 
+    LoginPostHandler, 
+    LogoutGetHandler,
+
+    DashboardGetHandler, 
+
+    WebsocketGetHandler,
+    
+    NLPGetHandler
     };

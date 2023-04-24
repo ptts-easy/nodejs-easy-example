@@ -1,6 +1,7 @@
 const http = require('http');
 const createError = require('http-errors');
 const express = require('express');
+const cors = require('cors');
 const bodyParser = require("body-parser");
 const cookieParser = require('cookie-parser');
 const logger = require('morgan');
@@ -79,6 +80,10 @@ function RunHttpServer(server_ip, server_port) {
   app.set('views', path.join(__dirname, '../views'));
   app.set('view engine', 'hbs');
 
+  // Cors for allowing "cross origin resources"
+  // https://developer.mozilla.org/en-US/docs/Web/HTTP/Access_control_CORS
+  app.use(cors());
+
 //  app.use(logger('dev'));
 //  app.use(express.json());
 //  app.use(express.urlencoded({ extended: false }));
@@ -92,7 +97,6 @@ function RunHttpServer(server_ip, server_port) {
 
   app.use('/assets', express.static(path.join(__dirname, '../../public/assets')));
   app.use('/libs', express.static(path.join(__dirname, '../../public/libs')));
-  app.get('/hello', function(req, res) {res.sendFile(path.join(__dirname, '../../public/hello.html'));});
 
   routes.PublicRoutes();
   routes.PrivateRoutes();

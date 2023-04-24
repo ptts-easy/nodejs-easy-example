@@ -53,6 +53,6 @@ This is a nodejs web application to learn easily.
 - test
     - http://localhost:18080/
 
-## contact
+## references
 
-  If you need to contact me, you can do it at the email faco0909@outlook.com
+  - 
